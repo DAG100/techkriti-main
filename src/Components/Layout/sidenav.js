@@ -34,10 +34,17 @@ import { Container } from "@mui/system";
 // import Stack from "@mui/material";
 import "./sidenav.css";
 import { TabPanelUnstyled } from "@mui/base";
+import Slides from "../slides.js";
 
-const Sidenav = () => {
-  return (
-    <>
+const Sidenav = (props) => {
+// 	return (
+// 		<div>
+// 			{props.children}
+// 		</div>
+// 	);
+
+ return (
+    <div>
       <Grid
         container
         bgcolor={"black"}
@@ -92,10 +99,6 @@ const Sidenav = () => {
         </Grid>
         <Divider color={"white"} orientation="vertical" flexItem></Divider>
         <Grid item md>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id
-          dignissim justo. Nulla ut facilisis ligula. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. Sed malesuada lobortis
-          pretium.
         </Grid>
         <Divider color={"white"} orientation="vertical" flexItem></Divider>
         <Grid item md={0.5} sx={{ minWidth: 87 }} style={{display:"flex",flexDirection:"column"}}>
@@ -131,7 +134,7 @@ const Sidenav = () => {
         </Grid>
         <Divider></Divider>
       </Grid>
-    </>
+    </div>
   );
 };
 

@@ -1,18 +1,20 @@
 import React from 'react';
 import Sidenav from './sidenav';
+import Slides from "../slides.js";
+import {Outlet} from "react-router-dom";
 
-const Layout = ({children}) => {
+const Layout = (props) => {
     return(
-        <>
+        <div>
         {/* <div style={{"border":"2px solid red"}}>
             {/* <Toolbar/>
             <Sides/>
             <Backdrop/> 
             
     </div> */}
-        <Sidenav/>        
-        <main>{children}</main>
-        </>
+        <Sidenav /> 
+        <Outlet />    
+        </div>
     )
 }
 
